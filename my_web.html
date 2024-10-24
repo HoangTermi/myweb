@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about Hoàng</title>
+    <link rel="icon" type="image" href="mypic.jfif">
+    <style>
+        :root {
+            --white: #faf0fa;
+        }
+        div {
+            background-color: rgb(105, 103, 103);
+            color: white;
+            max-width: 960px;
+            max-height: 1300px;
+            margin-top: 5%;
+            margin-left: 17%;
+            margin-right: 10%;
+            border: 10px solid rgb(54, 50, 50);
+            padding-left: 0%;
+        }
+        .something{  
+            max-width: 600px auto;
+            height: 40px;
+            background-color: rgb(110, 98, 78);
+            margin-top: 15px;
+            display:flex;
+          
+
+        } 
+        .something a{
+            text-decoration: none;
+            padding-left: 20px;
+            border: 2px;
+            padding-right: 20px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            display: flex;   
+            
+        }
+        .something a:hover{
+            background-color: rgb(29, 44, 40);
+        } 
+        .menu2 {
+            background: linear-gradient(90deg, #433010, #4d3c11); /* Nền gradient */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px; /* Bo tròn góc menu */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+            flex-wrap: wrap; /* Đảm bảo mục menu sẽ xuống dòng khi không đủ không gian */
+        }
+ 
+        .menu2 a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.1); /* Làm mờ nền của liên kết */
+            border-radius: 5px; /* Bo tròn góc liên kết */
+            transition: background-color 0.3s, transform 0.3s; /* Hiệu khi hover */
+        }
+
+        .menu2 a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+
+        @media (max-width: 768px) {
+    .menu2 {
+        flex-direction: column; /* Chuyển thành menu dọc */
+        align-items: stretch; /* Căn đều các mục theo chiều dọc */
+        padding: 10px;
+    }
+
+    .menu2 a {
+        padding: 15px 10px; /* Tăng chiều cao cho nút trên thiết bị nhỏ */
+        font-size: 1.2rem; /* Tăng kích thước chữ cho dễ đọc hơn */
+        text-align: center; /* Căn giữa chữ trong các liên kết */
+    }
+        }
+
+
+        @media (max-width: 480px) {
+        .menu2 a {
+            font-size: 1rem; /* Giảm kích thước chữ nếu cần thiết */
+            padding: 12px 8px; 
+        }
+        }
+
+
+        body{
+            background-image: url('uni.jfif');
+            background-attachment: fixed;
+            background-size: cover;
+            font-family:Arial, sans-serif
+        }
+        a:link {
+            color:var(--white);
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 2px solid ;
+        }
+        a:hover {
+            background-color: black;
+        }
+        a:visited {
+            color:var(--white);
+        }
+        a[href="#d1"] {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: crimson;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    </style>    
+</head>
+<body>
+  
+    <div id="d1" class="something">
+        <a href="https://www.facebook.com/jenna.chau.14">TRANG CHỦ</a>
+        <a href="#d2">HOMEWORK</a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=okoGKhK1L8hvTzVg">SOMETHING</a>
+    </div>
+    <div>
+    <h1 style="padding-top: 20px; font-size: 3vw;">About Hoàng</h1>
+    <img style="max-width: 50%;height: auto;padding-left: 25%;" src="mypic.jfif">
+    <hr>
+    <h2 style="color:white;background-color: rgb(21, 21, 20);text-align: center;">Infomation</h2>  
+    <blockquote>
+       -Full name: Trần Việt Hoàng<br>
+       -date of birth: 17/1/2005<br>
+       -marriage status: Single <br>
+       -interest: sleeping   
+    </blockquote>
+    <h2 style="color:white;background-color: rgb(21, 21, 20);text-align: center;">Ability</h2>  
+    <blockquote>
+       - sleeping (i can sleep 15 hours a day).<br>
+       - walking (i walk pretty fast).
+    </blockquote>  
+    <h2 style="color:white;background-color: rgb(21, 21, 20);text-align: center;">learning process</h2> 
+    <blockquote>
+       - I have taken a few online courses and am confident in my ability to learn on my own,<br>
+         I believe that learning should go hand in hand with practice and only working can help<br>
+         us gaining skills.
+         <hr>
+       - My major is Information Technology and i studying to be a graphic programmer
+
+    </blockquote>
+    <h2 id="d2" style="color:white;background-color: rgb(21, 21, 20);text-align: center;">Link các bài tập học phần</h2>
+   <p class="menu2">
+    <a href="https://hoangtermi.github.io/btb1/thietkeweb_baitapbuoi1.html" onclick="gido()">Bài tập buổi 1</a>
+    <a href="https://hoangtermi.github.io/baitapbuoi2/b%C3%A0i%20t%E1%BA%ADp%20bu%E1%BB%95i%202.html">Bài tập buổi 2</a>
+    <a href="https://hoangtermi.github.io/baitapbuoi3/baitapbuoi3.html">Bài tập buổi 3</a>
+    <a href="https://hoangtermi.github.io/btb4/thietkeweb_baitapbuoi4.html">Bài tập buổi 4</a>
+    <a href="https://hoangtermi.github.io/btb5/thietkeweb_baitapbuoi5.html">Bài tập buổi 5</a>
+    <a href="https://hoangtermi.github.io/btb6/thietkeweb_baitapbuoi6.html">Bài tập buổi 6</a>
+    <a href="https://hoangtermi.github.io/btb7_bai2/thietkeweb_bai2_buoi7.html">Bài tập buổi 7</a>
+    <a href="https://hoangtermi.github.io/btb8/thietkeweb_baitapbuoi8.html">Bài tập buổi 8</a>
+    <a href="https://hoangtermi.github.io/btb9/thietkeweb_baitapbuoi9.html">Bài tập buổi 9</a>
+    <a href="https://hoangtermi.github.io/btb10/thietkeweb_baitapbuoi10.html">Bài tập buổi 10</a>
+   </p> 
+  </div>
+<script>
+function gido() {
+    alert("Xin hãy đợi trong giây lát, việc loading có thể hơi lâu!");
+}
+</script>
+
+  <a href="#d1" class="fas fa-arrow-up" style=" color:white;background-color:crimson;width: 15px;height: 15px; text-align: center;margin-left: 45%; text-decoration: none;">^</a>
+  
+</body>
+</html>
